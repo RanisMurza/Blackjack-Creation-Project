@@ -28,4 +28,19 @@ public abstract class Person {
     public void setName(String name){
         this.name = name;
     }
+    public void printHand(){
+        System.out.println("Рука " + this.name + "а выглядит следующим образом: ");
+        System.out.println(this.hand + " Количество очков: " + this.hand.calculatorValue());
+    }
+    //методы взятия карты
+    public void hit(Deck deck, Deck discard) throws Exception {
+
+        //If there's no cards left in the deck
+        if (!deck.hasCards()) {
+            deck.reloadDeckFromDiscard(discard);
+        }
+        this.hand.takeCardFromDeck(deck);
+        System.out.println(this.name + " взял карту");
+        this.printHand();
+    }
 }

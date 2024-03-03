@@ -1,9 +1,9 @@
 //класс мастей
 public enum Suit {
-    CLUB("Clubs"), //трефы
-    DIAMOND("Diamonds"), //бубны
-    HEART("Hearts"), //Черви
-    SPADE("Spades"); //Пики
+    CLUB("Треф"), //трефы
+    DIAMOND("Бубен"), //бубны
+    HEART("Черви"), //Черви
+    SPADE("Пики"); //Пики
     private String suitName;
 
     Suit(String suitName) {

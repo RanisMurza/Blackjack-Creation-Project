@@ -15,6 +15,15 @@ public class Hand {
         }
         return output;
     }
+    public void discardHandToDeck(Deck discardDeck){
+
+        //copy cards from hand to discardDeck
+        discardDeck.addCards(hand);
+
+        //clear the hand
+        hand.clear();
+
+    }
     public int calculatorValue(){
         int value = 0;
         int aceCount = 0;
@@ -32,5 +41,8 @@ public class Hand {
             }
         }
         return value;
+    }
+    public Card getCard(int idx){
+        return hand.get(idx);
     }
 }

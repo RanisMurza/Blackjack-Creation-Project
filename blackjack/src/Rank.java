@@ -1,17 +1,17 @@
 public enum Rank {
-    TWO("Two", 2),
-    THREE("Three", 3),
-    FOUR("Four",4),
-    FIVE("Five",5),
-    SIX("Six",6),
-    SEVEN("Seven",7),
-    EIGHT("Eight",8),
-    NINE("Nine",9),
-    TEN("Ten",10),
-    JACK("Jack",10), //валет
-    QUEEN("Queen",10), //дама
-    KING("King",10), //король
-    ACE("Ace", 11); //туз
+    TWO("Два", 2),
+    THREE("Три", 3),
+    FOUR("Четыре",4),
+    FIVE("Пять",5),
+    SIX("Шесть",6),
+    SEVEN("Семь",7),
+    EIGHT("Восемь",8),
+    NINE("Девять",9),
+    TEN("Десять",10),
+    JACK("Валет",10),
+    QUEEN("Дама",10),
+    KING("Король",10),
+    ACE("Туз", 11);
 
     private String rankName;
     private int rankValue;
